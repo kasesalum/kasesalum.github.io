@@ -1,3 +1,7 @@
+import React from 'react';
+import Autosuggest from 'react-autosuggest';
+import 'nicepage.css';
+
 const languages = [
   {
     name: 'C',
