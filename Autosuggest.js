@@ -36,7 +36,7 @@ const renderSuggestion = suggestion => (
   </div>
 );
 
-class Example extends React.Component {
+export class Example extends React.Component {
   constructor() {
     super();
 
@@ -95,7 +95,4 @@ class Example extends React.Component {
     );
   }
 }
-
-const rootNode = document.getElementById('autosuggestion');
-const root = ReactDOM.createRoot(rootNode);
-root.render(React.createElement(Example));
+ReactDOM.render(<Example />, document.getElementById('autosuggestion'));
